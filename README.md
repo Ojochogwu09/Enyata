@@ -27,9 +27,9 @@ describe("SauceDemo E2E Test", () => {
         cy.url().should("include", "/checkout-step-one.html");
 
         // Enter checkout details
-        cy.get("#first-name").type("John");
-        cy.get("#last-name").type("Doe");
-        cy.get("#postal-code").type("12345");
+        cy.get("#first-name").type("Esther");
+        cy.get("#last-name").type("Agada");
+        cy.get("#postal-code").type("101010");
         cy.get("#continue").click();
 
         // Finish the order
